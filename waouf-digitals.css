@@ -150,7 +150,7 @@ main {
 
 .intro {
      display: flex;
-    margin: 100px 10% 80px;
+    margin: 130px 10% 80px;
     align-items: center;
     justify-content: center;
     gap: 80px;
@@ -975,6 +975,7 @@ textarea {
 
 .booking-container {
     margin: 40px 10%;
+    position: relative;
 
 }
 
@@ -1128,6 +1129,23 @@ textarea {
 .submit:hover {
     background-color: #CADCFC;
     color:  #00246B;
+}
+
+.booking-message {
+    background-color: #EDF4F2;
+    padding: 30px;
+    text-align: center;
+    transition: 0.5s;
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    width: 100%;
+}
+
+.booking-message i {
+    font-size: 40px;
+    padding: 20px;
 }
 
 /*.form-booking {

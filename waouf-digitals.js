@@ -66,39 +66,6 @@ faqs.forEach((faq) => {
 });
 
 
-/*const contactForm = document.getElementById('applicationForm'),
-      contactMessage = document.getElementById('contact-message'),
-      application = document.getElementById('form_container');
-
-const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_km7balj', 'template_uz9rorp', '#applicationForm', 'Cshuz3q2Ul1WqyboJ')
-    .then(() => {
-        application.style.display = 'none';  // Hide the form
-        contactMessage.style.display = 'block'; // Show the message
-
-        setTimeout(() => {
-            contactMessage.style.display = 'none';
-            contactMessage.textContent = ''; // Clear the message text
-        }, 5000);
-
-        contactForm.reset();
-    })
-    .catch((error) => {
-        contactMessage.style.display = 'block'; // Show the message
-        contactMessage.innerHTML = '<img src="images/error.png" alt="Error"><span>Failed to send application. Please try again later.</span>';
-
-        setTimeout(() => {
-            contactMessage.style.display = 'none';
-            contactMessage.innerHTML = ''; // Clear the message text
-        }, 5000);
-    });
-};
-
-contactForm.addEventListener('submit', sendEmail);*/
-
-
 // script.js
 let scheduleCall = {
     date: '',
@@ -161,7 +128,7 @@ const overlay2 = document.getElementById('overlay-2');
 
 bookButton.addEventListener('click', (event) => {
     event.preventDefault();
-    addDate(event);
+    addDate(event);  // This should add the selected date and time
 });
 
 overlay2.addEventListener('click', () => {
@@ -191,3 +158,34 @@ function closeModal(modal) {
     overlay2.classList.remove('active');
     document.body.classList.remove('no-scroll');
 }
+
+const contactForm = document.getElementById('applicationForm'),
+      contactMessage = document.getElementById('booking_message'),
+      application = document.getElementById('modal');
+
+const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_w2ifqf8', 'template_yrgl2ig', '#applicationForm', 'I4iRZtZ4Odli2UxhE')
+    .then(() => {
+        closeModal(application);  // Close modal instead of hiding directly
+        contactMessage.style.display = 'block';  // Show success message
+
+        setTimeout(() => {
+            contactMessage.style.display = 'none';  // Hide message after 5 seconds
+        }, 5000);
+
+        contactForm.reset();
+    })
+    .catch((error) => {
+        contactMessage.style.display = 'block';
+        contactMessage.innerHTML = '<i class="fa-sharp fa-light fa-ban"></i><span>Failed to send application. Please try again later.</span>';
+
+        setTimeout(() => {
+            contactMessage.style.display = 'none';
+            contactMessage.innerHTML = '';  // Clear error message text
+        }, 5000);
+    });
+};
+
+contactForm.addEventListener('submit', sendEmail);

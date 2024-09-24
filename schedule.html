@@ -61,7 +61,6 @@
             <li><a href="clients.html">Clients</a></li>
             <li><a href="how-it-works.html">How it works</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
         <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
         <div class="button-fas">
@@ -83,10 +82,9 @@
                 <div class="demo">
                     <h1>Demo Call</h1>
                     <div><i class="far fa-clock"></i> <span>30 Mins</span></div>
-                        <p>Ready to explore how our Virtual Assistance and Website Assistance Services can elevate your business?
-                        <br>
-                        <br>
-                        <br>
+                    <p>
+                        Ready to explore how our Virtual Assistance and Website Assistance Services can elevate your business?
+                        <br><br><br>
                         Book a personalized session with us to discover how we can tailor our services to meet your unique needs. On this call we will discuss your business bottlenecks and answer any questions you might have.
                     </p>
                 </div>
@@ -100,87 +98,86 @@
                 <div class="select">
                     <h2>Select Time:</h2>
                     <p>10AM - 5PM</p>
-                    <input type="time" class="js-time-input" required> 
-                    <button class="js-book-button" data-modal-target="#modal">Book</button> 
+                    <input type="time" class="js-time-input" required>
+                    <button class="js-book-button" data-modal-target="#modal">Book</button>
                 </div>
-
             </div>
+
             <div class="modal" id="modal">
-            <div class="modal-header">
-                <h2>Confirm Booking</h2>
-                <button data-close-button class="close-button">&times;</button>
+                <div class="modal-header">
+                    <h2>Confirm Booking</h2>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h3>Demo call with Waouf digital</h3>
+                    <div class="js-schedule"></div>
+                    <div class="clock"><i class="far fa-clock"></i> <span>30 Mins</span></div>
+                    <form action="" id="applicationForm">
+                        <label for="yourName">Your Name</label>
+                        <input type="text" id="yourName" name="user_name" required>
+                        <label for="yourEmail">Your Email</label>
+                        <input type="text" id="yourEmail" name="user_email" required>
+                        <label for="yourCompany">Company Name</label>
+                        <input type="text" id="yourCompany" name="user_company" required>
+                        <label for="role">Job Role</label>
+                        <input type="text" id="role" name="user_role" required>
+                        <label for="meeting">Please share anything that will help prepare for our meeting</label>
+                        <textarea id="meeting" name="user_meeting" rows="4" cols="60" required></textarea>
+                        <div>
+                            <button type="submit" class="submit">Book Call</button>
+                            <button data-close-button type="button" class="submit">Cancel</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="modal-body">
 
-                <h3>Demo call with Waouf digital</h3>
+            <div id="overlay-2"></div>
 
-                <div class="js-schedule"></div>
-
-                <div class="clock"><i class="far fa-clock"></i> <span>30 Mins</span></div>
-
-                <form action="" id="">
-                    <label for="yourName">Your Name</label>
-                    <input type="text" id="yourName" name="user_yourName"  required>
-
-                    <label for="yourEmail">Your Email</label>
-                    <input type="text" id="yourEmail" name="user_YourEmail"  required>
-
-                    <label for="yourCompany">Company Name</label>
-                    <input type="text" id="yourCompany" name="user_yourCompany"  required>
-
-                    <label for="role">Job Role</label>
-                    <input type="text" id="role" name="user_role" required>
-
-                    <label for="meeting">Please share anything that will help prepare for our meeting</label>
-                    <textarea id="meeting" name="user_metting" rows="4" cols="60" required></textarea>
-                    <div>
-                         <button type="submit" class="submit">Book Call</button>
-                        <button data-close-button type="button" class="submit">Cancel</button>
-                    </div>
-                </form>
+            <div class="booking-message" id="booking_message">
+                <i class="fa-sharp fa-thin fa-circle-check"></i>
+                <p>Thank you! Your Booking is successful.</p>
             </div>
-        </div>
-        <div id="overlay-2">
-            
-        </div>
         </section>
     </main>
-
 </body>
-    <footer>
-        <div class="footer">
-            <a href="index.html"><img src="images/Waouf-logo2.png"></a>
-            <div class="footer-container">
-                <div class="footer-content">
-                    <p>
-                        We help our clients to thrive and grow swiftly, with our cost-effective unlimited virtual and website service designed to enhance efficiency. Experience Waouf Digital advantage – try us now!
-                    </p>
+<footer>
+    <div class="footer">
+        <a href="index.html"><img src="images/Waouf-logo2.png"></a>
+        <div class="footer-container">
+            <div class="footer-content">
+                <p>
+                    We help our clients to thrive and grow swiftly, with our cost-effective unlimited virtual and website service designed to enhance efficiency. Experience Waouf Digital advantage – try us now!
+                </p>
 
-                   <div class="footer-icon">
-                        <a href=><i class="fab fa-instagram"></i></a>
-                        <a href=><i class="fab fa-linkedin"></i></a>
-                        <a href=><i class="fas fa-envelope"></i></a>
-                    </div>
-
-                    <h3>© 2024 Waouf Digital. All Rights Reserved.</h3>
+               <div class="footer-icon">
+                    <a href=><i class="fab fa-instagram"></i></a>
+                    <a href=><i class="fab fa-linkedin"></i></a>
+                    <a href=><i class="fas fa-envelope"></i></a>
                 </div>
-                <div class="footer-links">
-                    <div>
-                        <a href="about.html"><p>About Us</p></a>
-                        <a href="how-it-works.html"><p>How It Works</p></a>
-                        <a href="schedule.html"><p>Book A Call</p></a>
-                    </div>
-                    <div>
-                        <a href="packages.html"><p>Pricing</p></a>
-                        <a href=""><p>Virtual Services</p></a>
-                        <a href="contact.html"><p>Contact Us</p></a>
-                    </div>
+
+                <h3>© 2024 Waouf Digital. All Rights Reserved.</h3>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <a href="about.html"><p>About Us</p></a>
+                    <a href="how-it-works.html"><p>How It Works</p></a>
+                    <a href="schedule.html"><p>Book A Call</p></a>
+                </div>
+                <div>
+                    <a href="packages.html"><p>Pricing</p></a>
+                    <a href=""><p>Virtual Services</p></a>
+                    <a href="contact.html"><p>Contact Us</p></a>
                 </div>
             </div>
         </div>
-    </footer>
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="fa-sharp fa-light fa-chevron-up"></i>
-    </a>
+    </div>
+</footer>
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="fa-sharp fa-light fa-chevron-up"></i>
+</a>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
 <script src="waouf-digitals.js"></script>
 </html>
