@@ -28,8 +28,7 @@ nav.scrolled {
 }
 
 nav img {
-    width: 180px;
-    
+    width: 180px; 
 }
 
 nav ul li{
@@ -1482,4 +1481,27 @@ footer {
     }
 
 }
+
+@media only screen and (max-width: 400px) {
+    nav img {
+        width: 140px; 
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
