@@ -1355,9 +1355,14 @@ footer {
 }
 
 
-@media only screen and (max-width: 1045px){
+@media only screen and (max-width: 1080px){
     .booking-content {
         grid-template-columns: 350px 300px
+    }
+
+    .booking-message {
+        top: 35%;
+        left: 1%;
     }
 }
 
@@ -1411,6 +1416,11 @@ footer {
         width: 500px;
         max-width: 500px;
     }
+
+    .booking-message {
+        top: 35%;
+        left: 1%;
+    }
 }
 
 
@@ -1447,6 +1457,11 @@ footer {
     .modal {
         width: 350px;
         max-width: 350px;
+    }
+
+    .booking-message {
+        top: 50%;
+        left: 1%;
     }
 }
 
@@ -1498,11 +1513,21 @@ footer {
         margin-bottom: 10px;
     }
 
+    .booking-message {
+        top: 50%;
+        left: 1%;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
     nav img {
         width: 155px; 
+    }
+
+    .booking-message {
+        top: 50%;
+        left: 1%;
     }
 
 }
